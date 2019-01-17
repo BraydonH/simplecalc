@@ -61,8 +61,10 @@ public class Calculator {
     
     private func fact(_ num : Int) -> Int {
         var result = 1
-        for i in 2...num {
-            result *= i
+        if num > 1 {
+            for i in 2...num {
+                result *= i
+            }
         }
         return result
     }
